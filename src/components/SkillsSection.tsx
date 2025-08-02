@@ -32,7 +32,7 @@ const SkillsSection = () => {
               className="glass-effect p-4 rounded-lg animate-fade-in" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex justify-between items-center mb-2">
+              <div className="flex justify-between items-center mb-1">
                 <span className="font-medium">{skill.name}</span>
                 <div className="flex min-w-max">
                   {[...Array(5)].map((_, i) => (
