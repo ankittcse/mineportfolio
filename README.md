@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Ankit Kishor - Web Developer Portfolio
 
-## Project info
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://app.netlify.com/sites/ankitkishor/deploys)
 
-**URL**: https://lovable.dev/projects/2e630bce-7312-464c-995f-f01f69df367c
+Welcome to the GitHub repository for my personal portfolio website. This project showcases my skills, projects, and journey as a Web Developer and aspiring Cloud Engineer. It is designed to be a clean, modern, and fully responsive representation of my work.
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+You can view the live version of my portfolio here: **[ankitkishor.netlify.app](https://ankitkishor.netlify.app/)**
 
-**Use Lovable**
+## 📸 Screenshot
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2e630bce-7312-464c-995f-f01f69df367c) and start prompting.
+![Portfolio Screenshot](./path/to/your/screenshot.png)
+*Replace `./path/to/your/screenshot.png` with a real path to a screenshot of your portfolio.*
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+* **Responsive Design:** Looks great on all devices, from mobile phones to desktop screens.
+* **Modern UI/UX:** Clean, dark-themed interface with smooth animations and a focus on user experience.
+* **Multiple Sections:** Includes dedicated sections for Home, About, Skills, Projects, and Contact information.
+* **Interactive Skills Showcase:** Displays my technical skills with proficiency levels.
+* **Functional Contact Form:** A working contact form powered by Netlify Forms that sends submissions directly to my email.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project was built using a modern tech stack:
 
-Follow these steps:
+* **Frontend:** [React](https://reactjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Deployment & Forms:** [Netlify](https://www.netlify.com/)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚙️ Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To get a local copy up and running, follow these simple steps.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+You need to have [Node.js](https://nodejs.org/en/) and `npm` installed on your machine.
 
-**Edit a file directly in GitHub**
+### Installation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1.  **Clone the repository**
+    ```sh
+    git clone [https://github.com/ankittcse/YOUR_REPOSITORY_NAME.git](https://github.com/ankittcse/YOUR_REPOSITORY_NAME.git)
+    ```
+2.  **Navigate to the project directory**
+    ```sh
+    cd YOUR_REPOSITORY_NAME
+    ```
+3.  **Install NPM packages**
+    ```sh
+    npm install
+    ```
+4.  **Run the development server**
+    ```sh
+    npm run dev
+    ```
+    Your project should now be running on `http://localhost:5173/` (or another port).
 
-**Use GitHub Codespaces**
+## 📬 Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Ankit Kishor
 
-## What technologies are used for this project?
+* **Email:** [connectankittt@gmail.com](mailto:connectankittt@gmail.com)
+* **LinkedIn:** [linkedin.com/in/ankit-raj-kishor](https://www.linkedin.com/in/ankit-raj-kishor-00087129a/)
+* **GitHub:** [@ankittcse](https://github.com/ankittcse)
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2e630bce-7312-464c-995f-f01f69df367c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

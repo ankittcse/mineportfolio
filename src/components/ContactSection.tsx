@@ -1,50 +1,10 @@
-
-import { useState } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
   return (
     <section id="contact" className="bg-theme-dark py-20">
       <div className="section-container">
@@ -56,7 +16,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
             <Card className="glass-effect p-6 h-full">
-              <h3 className="text-2xl font-semibold mb-8 text-theme-purple">Let's Talk</h3>
+              <h3 className="text-2xl font-semibold mb-8 text-theme-purple">Get in Touch</h3>
               
               <div className="space-y-8">
                 <div className="flex items-center">
@@ -96,7 +56,7 @@ const ContactSection = () => {
                 <h4 className="font-medium mb-4">Connect with me:</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://www.linkedin.com/in/ankit-raj-kishor/" 
+                    href="https://www.linkedin.com/in/ankit-raj-kishor-00087129a/" 
                     target="_blank" 
                     rel="noreferrer"
                     className="bg-theme-purple/20 p-3 rounded-full text-theme-purple hover:bg-theme-purple hover:text-white transition-colors"
@@ -107,7 +67,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://github.com/" 
+                    href="https://github.com/ankittcse" 
                     target="_blank" 
                     rel="noreferrer"
                     className="bg-theme-purple/20 p-3 rounded-full text-theme-purple hover:bg-theme-purple hover:text-white transition-colors"
@@ -126,7 +86,14 @@ const ContactSection = () => {
             <Card className="glass-effect p-6">
               <h3 className="text-2xl font-semibold mb-6 text-theme-purple">Send Me a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1">
                     Your Name
@@ -134,8 +101,6 @@ const ContactSection = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     placeholder="Enter your name"
                     className="bg-theme-dark/50 border-theme-purple/30 focus:border-theme-purple"
                     required
@@ -150,8 +115,6 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     placeholder="Enter your email"
                     className="bg-theme-dark/50 border-theme-purple/30 focus:border-theme-purple"
                     required
@@ -165,8 +128,6 @@ const ContactSection = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     placeholder="Write your message here..."
                     className="bg-theme-dark/50 border-theme-purple/30 focus:border-theme-purple h-32"
                     required
@@ -176,9 +137,8 @@ const ContactSection = () => {
                 <Button 
                   type="submit" 
                   className="w-full bg-theme-purple hover:bg-theme-purple/90 text-white"
-                  disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  Send Message
                   <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>

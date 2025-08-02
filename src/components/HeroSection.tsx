@@ -8,7 +8,7 @@ const HeroSection = () => {
         {/* Social media links column - moved even more to the left */}
         <div className="hidden lg:flex lg:col-span-1 flex-col items-center gap-6 justify-center">
           <a 
-            href="https://www.linkedin.com/in/ankit-raj-kishor/" 
+            href="https://www.linkedin.com/in/ankit-raj-kishor-00087129a/" 
             target="_blank" 
             rel="noreferrer" 
             className="text-theme-purple hover:text-theme-light-purple transition-colors w-12 h-12 flex items-center justify-center bg-white/5 rounded-full"
@@ -19,7 +19,7 @@ const HeroSection = () => {
             </svg>
           </a>
           <a 
-            href="https://github.com/" 
+            href="https://github.com/ankittcse" 
             target="_blank" 
             rel="noreferrer"
             className="text-theme-purple hover:text-theme-light-purple transition-colors w-12 h-12 flex items-center justify-center bg-white/5 rounded-full"
@@ -48,7 +48,7 @@ const HeroSection = () => {
             Hi, I am <span className="text-theme-purple">Ankit Kishor</span>
           </h1>
           <h2 className="text-xl md:text-2xl font-medium text-white/80 mb-6">
-            Web Developer | Aspiring Cloud Engineer
+            Full Stack Developer | Aspiring Cloud Engineer
           </h2>
           <p className="text-white/60 mb-8 max-w-md mx-auto lg:mx-0">
             Passionate about creating engaging web experiences.

@@ -3,12 +3,12 @@ import { Progress } from "@/components/ui/progress";
 
 const SkillsSection = () => {
   const skills = [
-    { name: "HTML", rating: 5, level: 100 },
-    { name: "CSS", rating: 5, level: 100 },
+    { name: "HTML & CSS", rating: 4.5, level: 90 },
+    { name: "C Programming", rating: 4, level: 90 },
     { name: "JavaScript", rating: 4, level: 80 },
     { name: "C++", rating: 4, level: 90 },
     { name: "Python", rating: 4, level: 90 },
-    { name: "AI", rating: 4, level: 90 },
+    { name: "DBMS", rating: 4, level: 90 },
     { name: "Java", rating: 4, level: 90 },
     { name: "UI/UX Design", rating: 4, level: 80 },
     { name: "Responsive Design", rating: 5, level: 100 },
@@ -25,7 +25,7 @@ const SkillsSection = () => {
           <p className="text-white/60 max-w-md mx-auto">My technical expertise and proficiency levels in various technologies</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {skills.map((skill, index) => (
             <div 
               key={index} 
