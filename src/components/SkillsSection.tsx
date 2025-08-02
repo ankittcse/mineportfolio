@@ -1,4 +1,3 @@
-
 import { Progress } from "@/components/ui/progress";
 
 const SkillsSection = () => {
@@ -29,20 +28,23 @@ const SkillsSection = () => {
           {skills.map((skill, index) => (
             <div 
               key={index} 
-              className="glass-effect p-4 rounded-lg animate-fade-in" 
+              className="glass-effect p-4 rounded-lg animate-fade-in flex flex-col justify-between" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex justify-between items-center mb-1">
-                <span className="font-medium">{skill.name}</span>
-                <div className="flex min-w-max">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className={`text-xl ${i < skill.rating ? 'text-theme-purple' : 'text-white/20'}`}>
-                      ★
-                    </span>
-                  ))}
+              <div>
+                {/* THIS IS THE DIV THAT HAS BEEN CHANGED */}
+                <div className="flex flex-col gap-1 lg:flex-row lg:items-center lg:justify-between">
+                  <span className="font-medium">{skill.name}</span>
+                  <div className="flex"> {/* min-w-max is no longer needed */}
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className={`text-xl ${i < skill.rating ? 'text-theme-purple' : 'text-white/20'}`}>
+                        ★
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <Progress value={skill.level} className="h-2 bg-theme-purple/20" />
+              <Progress value={skill.level} className="h-2 bg-theme-purple/20 mt-3" />
             </div>
           ))}
         </div>
