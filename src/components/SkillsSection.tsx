@@ -34,7 +34,7 @@ const SkillsSection = () => {
             >
               <div className="flex justify-between items-center mb-2">
                 <span className="font-medium">{skill.name}</span>
-                <div className="flex">
+                <div className="flex min-w-max">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className={`text-xl ${i < skill.rating ? 'text-theme-purple' : 'text-white/20'}`}>
                       ★
