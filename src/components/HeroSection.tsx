@@ -35,7 +35,7 @@ const HeroSection = () => {
         <div className="lg:col-span-4 flex justify-center lg:justify-start ml-0">
           <div className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-theme-purple/20 flex items-center justify-center p-1">
             <img 
-              src="./../public/MyPicprofile.jpg"
+              src="/MyPicprofile.JPG"
               alt="Profile Avatar"
               className="w-full h-full object-cover rounded-full"
             />
@@ -63,7 +63,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce hidden sm:flex">
         <span className="text-white/60 text-sm mb-2">Scroll down</span>
         <a href="#about" className="text-theme-purple" aria-label="Scroll to About section">
           <ArrowDown size={24} />
